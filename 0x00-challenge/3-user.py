@@ -1,4 +1,3 @@
-3-user.py
 #!/usr/bin/python3
 """
  User Model
