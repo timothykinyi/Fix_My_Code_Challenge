@@ -15,17 +15,16 @@ def fizzbuzz(n):
     if n < 1:
         return
 
-    tmp_result = []
     for i in range(1, n + 1):
-        if (i % 3) == 0 and (i % 5) == 0:
-            tmp_result.append("FizzBuzz")
-        elif (i % 3) == 0:
-            tmp_result.append("Fizz")
-        elif (i % 5) == 0:
-            tmp_result.append("Buzz")
+        if i % 3 == 0 and i % 5 == 0:
+            print("FizzBuzz", end=" ")
+        elif i % 3 == 0:
+            print("Fizz", end=" ")
+        elif i % 5 == 0:
+            print("Buzz", end=" ")
         else:
-            tmp_result.append(str(i))
-    print(" ".join(tmp_result))
+            print(i, end=" ")
+    print()  # Print a newline at the end
 
 
 if __name__ == '__main__':
